@@ -20,3 +20,14 @@ print(f"Mi edad es {age}")  # Formatea a string la variable
 # Formatear directamente desde el input
 age = int(input("➡️  Ingresa tu edad:"))
 print("tipe:", type(age))
+
+
+name = 'Juana'
+print(name)
+age = '10'
+print(age)
+total = int(age) + 10
+
+
+template = f"Hola mi nombre es {name}, tengo {age} años y en 10 años tendré {str(total)} años"
+print(template)
