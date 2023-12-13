@@ -1,9 +1,12 @@
 import random
 
-user_option = input("🕹️ piedra, papel o tijera: ")
-computer_option = random.choice(["piedra", "papel", "tijera"])
+options = ["piedra", "papel", "tijera"]
 
-print(f"🧙 {user_option} vs {computer_option} 🤖")
+user_option = input("🕹️ Piedra, papel o tijera: ").lower()
+computer_option = random.choice(options)
+
+msg = f"🧙 {user_option.capitalize()} vs {computer_option.capitalize()} 🤖"
+print(msg)
 
 if user_option == computer_option:
     print("🟰 Empate!")
