@@ -12,7 +12,7 @@ print("x:", x)
 while x < 10:
     print(x)
     if x == 5:
-        break
+        break  # Rompe el ciclo
     x += 1
 
 y = 0
