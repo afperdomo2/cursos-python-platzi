@@ -1,8 +1,13 @@
 import random
 
-options = ["piedra", "papel", "tijera"]
+options = ("piedra", "papel", "tijera")
 
-user_option = input("🕹️ Piedra, papel o tijera: ").lower()
+while True:
+    user_option = input("🕹️ Piedra, papel o tijera: ").lower()
+    if user_option in options:
+        break
+    print("🚫 Opción inválida")
+
 computer_option = random.choice(options)
 
 msg = f"🧙 {user_option.capitalize()} vs {computer_option.capitalize()} 🤖"
