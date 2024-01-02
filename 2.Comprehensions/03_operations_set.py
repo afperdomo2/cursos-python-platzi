@@ -1,9 +1,13 @@
 set_a = {"COL", "MEX", "BOL"}
 set_b = {"PE", "BOL"}
+set_d = {"CHI"}
 
 # 1. Union
 set_c = set_a.union(set_b)
 print(set_c)  # {'COL', 'MEX', 'BOL', 'PE'}
+
+# Unir varios conjuntos
+set_e = set_a.union(set_b, set_d)  # {'COL', 'MEX', 'BOL', 'PE', 'CHI'}
 
 # Union usando el operador |
 print(set_a | set_b)  # {'COL', 'MEX', 'BOL', 'PE'}
