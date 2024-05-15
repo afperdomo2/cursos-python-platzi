@@ -1,0 +1,5 @@
+line 1
+line 2
+line 3
+hola a todos
+fin del comunicado
