@@ -1,4 +1,4 @@
-path = "C:/laragon/www/cursos-python-platzi/2.Comprehensions/file.txt"
+path = "./file.txt"
 
 print("✅ 1. Leer archivo completo:")
 file = open(path)
@@ -23,7 +23,6 @@ file3.close()  # Cerrar archivo
 
 print("\n✅ 4. Leer todas las lineas con un with:")
 # El with se encarga de cerrar el archivo automaticamente
-file4 = open(path)
-with open(path) as file4:
+with open("./file.txt") as file4:
     for line in file4:
         print(line)
